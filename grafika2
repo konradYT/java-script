@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <script language="JavaScript">
+      function okno_zamknij_graczyk_2() {
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Lecimy na pomoc!</h1>
+    <img src="obraz2.gif" alt="Lecimy na pomoc!" style="width:100%; height:auto;" />
+    <input type="button" value="Zamknij okno" onclick="okno_zamknij_graczyk_2()" />
+  </body>
+</html>
