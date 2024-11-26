@@ -16,12 +16,10 @@ var D2_gra=parseFloat(Dzien2);
 var G1_gra=ParseFloat(godz1);
 var G2_gra=ParseFloat(godz2);
 
-ile_sekund_gra=(D1_gra - D2_gra)*24*3600;
-ile_sekund_gra2=(G1_gra - G2_gra)*3600;
-sekund=(ile_sekund_gra - ile_sekund_gra2)
+ile_sekund_gra=(D1_gra - D2_gra)*24*3600+(G1_gra-G2_gra);
 document.write("Dzien1=" +D1_gra+"<br>");
 document.write("Dzien2=" +D2_gra+"<br>");
-document.write("Sekund=" +Sekund+" sek"+"<br>");
+document.write("Sekund=" +ile_sekund_gra+" sek"+"<br>");
 
 </script>
 </div>
