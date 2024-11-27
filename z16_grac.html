@@ -1,33 +1,34 @@
-
 <!DOCTYPE html>
+
 <head>
-<title>Obliczenia</title>
-<meta charset="utf-8">
+    <title>Obliczenia</title>
+    <meta charset="utf-8">
 </head>
+
 <body>
-<div style="color:red;font-size:100px;">
+    <div style="color:red;font-size:100px;">
 
-<script language="JavaScript">
+        <script language="JavaScript">
 
-var Liczba1 = prompt("A=", "");
+            var Liczba1 = prompt("A=", "");
 
-var A_Gra = parseFloat(Liczba1);
+            var A_Gra = parseFloat(Liczba1);
 
-var Liczba2 = prompt("B=", "");
+            var Liczba2 = prompt("B=", "");
 
-var B_Gra = parseFloat(Liczba2);
+            var B_Gra = parseFloat(Liczba2);
 
-document.write("A=" + A_Gra + " " + "B=" + B_Gra + "<br>");
+            document.write("A=" + A_Gra + " " + "B=" + B_Gra + "<br>");
 
-var wynik = Math.pow(A_Gra + B_Gra, 3);
-var wzor1 = Math.pow(A_Gra, 3);
-var wzor2 = 3 * Math.pow(A_Gra, 2) * B_Gra;
-var wzor3 = 3 * A_Gra * Math.pow(B_Gra, 2);
-var wzor4 = Math.pow(A_Gra, 3);
+            var wynik = Math.pow(A_Gra + B_Gra, 3);
+            var wzor1 = Math.pow(A_Gra, 3);
+            var wzor2 = 3 * Math.pow(A_Gra, 2) * B_Gra;
+            var wzor3 = 3 * A_Gra * Math.pow(B_Gra, 2);
+            var wzor4 = Math.pow(A_Gra, 3);
 
-document.write("(" + A_Gra + " + " + B_Gra + ")^3 = " + A_Gra + "^3 + 3*" + A_Gra + "^2*" + B_Gra + " + 3*" + A_Gra + "*" + B_Gra + "^2 + " + B_Gra + "^2<br>" + "= " + wzor1 + " + " + wzor2 + " + " + wzor3 + " + " + wzor4 + "<br>" + "= " + wynik);
+            document.write("(" + A_Gra + " + " + B_Gra + ")^3 = " + A_Gra + "^3 + 3*" + A_Gra + "^2*" + B_Gra + " + 3*" + A_Gra + "*" + B_Gra + "^2 + " + B_Gra + "^2<br>" + "= " + wzor1 + " + " + wzor2 + " + " + wzor3 + " + " + wzor4 + "<br>" + "= " + wynik);
 
 
-</script>
-</div>
+        </script>
+    </div>
 </body>
