@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kod źródłowy</title>
+</head>
+<body>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="pl"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Użycie funkcji&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div style="color:navy;font-size:30px;"&gt;
+                &lt;script&gt;
+                    var a = parseFloat(prompt("Podaj a:", ""));
+                    var b = parseFloat(prompt("Podaj b:", ""));
+                    
+                    function suma_gra(a, b) {
+                        return a + b;
+                    }
+                    function odejmowanie_gra(a, b) {
+                        return a - b;
+                    }
+                    function mnozenie_gra(a, b) {
+                        return a * b;
+                    }
+                    function od_kwadratu_gra(a, b) {
+                        return "a^2 = " + (a * a) + "<br>" + "b^2 = " + (b * b);
+                    }
+                    function reszta_z_dzielenia_a_przez_b_gra(a, b) {
+                        return a % b;
+                    }
+                    
+                    document.write("Suma = " + suma_gra(a, b) + "<br>");
+                    document.write("Różnica = " + odejmowanie_gra(a, b) + "<br>");
+                    document.write("Iloczyn = " + mnozenie_gra(a, b) + "<br>");
+                    document.write(od_kwadratu_gra(a, b) + "<br>");
+                    document.write("Reszta z dzielenia a przez b = " + reszta_z_dzielenia_a_przez_b_gra(a, b) + "<br>");
+                &lt;/script&gt;
+            &lt;/div&gt;
+            &lt;button onclick="window.location.href='zadanie18_graczyk.html'"&gt;Graczyk-Zadanie18&lt;/button&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+</body>
+</html>
