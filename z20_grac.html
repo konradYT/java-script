@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Obliczanie długości boków trójkąta</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <h1>Obliczanie długości boków trójkąta</h1>
+    <form>
+        Punkt A: <input type="text" id="xa_gra" placeholder="xa">
+        <input type="text" id="ya_gra" placeholder="ya"><br>
+        Punkt B: <input type="text" id="xb_gra" placeholder="xb">
+        <input type="text" id="yb_gra" placeholder="yb"><br>
+        Punkt C: <input type="text" id="xc_gra" placeholder="xc">
+        <input type="text" id="yc_gra" placeholder="yc"><br>
+        <input type="button" value="Oblicz długości boków" onclick="obliczBoki()">
+    </form>
+    
+    <h2>Wyniki:</h2>
+    <div id="wyniki"></div>
+    
+    <script>
+        function obliczOdleglosc(x1, y1, x2, y2) {
+            return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+        }
+        
+        function obliczBoki() {
+            var xa_gra = parseFloat(document.getElementById("xa_gra").value);
+            var ya_gra = parseFloat(document.getElementById("ya_gra").value);
+            var xb_gra = parseFloat(document.getElementById("xb_gra").value);
+            var yb_gra = parseFloat(document.getElementById("yb_gra").value);
+            var xc_gra = parseFloat(document.getElementById("xc_gra").value);
+            var yc_gra = parseFloat(document.getElementById("yc_gra").value);
+            
+            var ab_gra = obliczOdleglosc(xa_gra, ya_gra, xb_gra, yb_gra);
+            var bc_gra = obliczOdleglosc(xb_gra, yb_gra, xc_gra, yc_gra);
+            var ac_gra = obliczOdleglosc(xa_gra, ya_gra, xc_gra, yc_gra);
+            
+            document.getElementById("wyniki").innerHTML = "Długość AB: " + ab_gra.toFixed(2) + " cm<br>" +
+                                                            "Długość BC: " + bc_gra.toFixed(2) + " cm<br>" +
+                                                            "Długość AC: " + ac_gra.toFixed(2) + " cm";
+        }
+    </script>
+</body>
+</html>
