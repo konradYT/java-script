@@ -1,1 +1,58 @@
 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kod źródłowy</title>
+</head>
+<body>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="pl"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Obliczanie długości boków trójkąta&lt;/title&gt;
+            &lt;link rel="stylesheet" href="styl.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Obliczanie długości boków trójkąta&lt;/h1&gt;
+            &lt;form&gt;
+                Punkt A: &lt;input type="text" id="xa_gra" placeholder="xa"&gt;
+                &lt;input type="text" id="ya_gra" placeholder="ya"&gt;&lt;br&gt;
+                Punkt B: &lt;input type="text" id="xb_gra" placeholder="xb"&gt;
+                &lt;input type="text" id="yb_gra" placeholder="yb"&gt;&lt;br&gt;
+                Punkt C: &lt;input type="text" id="xc_gra" placeholder="xc"&gt;
+                &lt;input type="text" id="yc_gra" placeholder="yc"&gt;&lt;br&gt;
+                &lt;input type="button" value="Oblicz długości boków" onclick="obliczBoki()"&gt;
+            &lt;/form&gt;
+            
+            &lt;h2&gt;Wyniki:&lt;/h2&gt;
+            &lt;div id="wyniki"&gt;&lt;/div&gt;
+            
+            &lt;script&gt;
+                function obliczOdleglosc(x1, y1, x2, y2) {
+                    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+                }
+                
+                function obliczBoki() {
+                    var xa_gra = parseFloat(document.getElementById("xa_gra").value);
+                    var ya_gra = parseFloat(document.getElementById("ya_gra").value);
+                    var xb_gra = parseFloat(document.getElementById("xb_gra").value);
+                    var yb_gra = parseFloat(document.getElementById("yb_gra").value);
+                    var xc_gra = parseFloat(document.getElementById("xc_gra").value);
+                    var yc_gra = parseFloat(document.getElementById("yc_gra").value);
+                    
+                    var ab_gra = obliczOdleglosc(xa_gra, ya_gra, xb_gra, yb_gra);
+                    var bc_gra = obliczOdleglosc(xb_gra, yb_gra, xc_gra, yc_gra);
+                    var ac_gra = obliczOdleglosc(xa_gra, ya_gra, xc_gra, yc_gra);
+                    
+                    document.getElementById("wyniki").innerHTML = "Długość AB: " + ab_gra.toFixed(2) + " cm&lt;br&gt;" +
+                                                                    "Długość BC: " + bc_gra.toFixed(2) + " cm&lt;br&gt;" +
+                                                                    "Długość AC: " + ac_gra.toFixed(2) + " cm";
+                }
+            &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+</body>
+</html>
