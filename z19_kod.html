@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kod źródłowy</title>
+</head>
+<body>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="pl"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Użycie funkcji&lt;/title&gt;
+            &lt;link rel="stylesheet" href="styl.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;script&gt;
+                function Pole_Graczyk() {
+                    var a_gra = parseFloat(document.getElementById('dlugosc').value);
+                    var b_gra = a_gra * a_gra;
+                    document.getElementById("nazwa").innerHTML = "Pole kwadratu= " + b_gra.toFixed(2) + " cm^2";
+                }
+                function obwod_Graczyk() {
+                    var a_gra = parseFloat(document.getElementById('dlugosc').value);
+                    var b_gra = 4 * a_gra;
+                    document.getElementById("nazwa").innerHTML = "Obwód kwadratu= " + b_gra.toFixed(2) + " cm";
+                }
+            &lt;/script&gt;
+            &lt;h1&gt;Wszystko o KWADRACIE&lt;/h1&gt;&lt;br&gt;&lt;br&gt;
+            Podaj długość boku: &lt;input type="text" id="dlugosc" value="podaj długość"&gt; cm&lt;br&gt;&lt;br&gt;&lt;br&gt;
+            &lt;input type="button" name="pole" value="Oblicz pole" Onclick="Pole_Graczyk()"&gt;&lt;br&gt;&lt;br&gt;
+            &lt;input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_Graczyk()"&gt;&lt;br&gt;&lt;br&gt;
+            &lt;div style="color:red;font-size:50px;" id="nazwa"&gt;&lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+</body>
+</html>
