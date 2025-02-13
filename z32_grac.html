@@ -1,0 +1,35 @@
+<html>
+     <head>
+           <script type="text/javascript"> 
+                 function Autobus(marka_t, model_t, ilu_pasazerow_t, numer_linii_t, czy_miejski_t) {
+                     this.marka = marka_t;
+                     this.model = model_t;
+                     this.ilu_pasazerow = ilu_pasazerow_t;
+                     this.numer_linii = numer_linii_t;
+                     this.czy_miejski = czy_miejski_t;
+                 }
+                 
+                 Autobus.prototype.wypisz = function() { 
+                     alert(this.marka + " " + this.model + " " + this.ilu_pasazerow + " pasazerow, linia " + this.numer_linii + ", " + (this.czy_miejski ? "miejski" : "dalekobieżny"));
+                 };
+                 
+                 Autobus.prototype.wyswietl_nazwisko = function() {
+                     alert("Graczyk");
+                 };
+
+                 var Autobus1 = new Autobus("Mercedes", "Citaro", 80, "105", true);
+                 var Autobus2 = new Autobus("Solaris", "Urbino", 100, "204", true);
+                 
+                 Autobus1.wypisz();
+                 Autobus2.wypisz();
+                 Autobus1.wyswietl_nazwisko();
+
+                 document.write("Autobusy" + "<br>");
+                 document.write("Autobus pierwszy: " + Autobus1.marka + " " + Autobus1.model + ", pasazerow: " + Autobus1.ilu_pasazerow + ", linia: " + Autobus1.numer_linii);
+           </script> 
+     </head> 
+<body> 
+  <br>
+  Programowanie obiektowe
+</body> 
+</html>
