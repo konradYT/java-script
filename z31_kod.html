@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kod źródłowy</title>
+</head>
+<body>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="pl"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Obiekt Autobus&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;script&gt;
+                var autobus = { 
+                    marka: 'Mercedes', 
+                    model: 'Citaro', 
+                    ilu_pasazerow: 80, 
+                    numer_linii: '105',
+                    czy_miejski: true,
+                    wyswietl_autobus: function () { 
+                        document.write(this.marka + ' ' + this.model); 
+                    } 
+                }; 
+                autobus.wyswietl_autobus(); 
+                
+                autobus.rok_produkcji = 2015;
+                autobus.wypisz = function() {
+                    alert(this.marka + " został wyprodukowany w " + this.rok_produkcji + " roku");
+                };
+                autobus.wypisz();
+            &lt;/script&gt;
+            &lt;br&gt;
+            Programowanie obiektowe. &lt;br&gt;
+            Obiekt to autobus &lt;br&gt;
+            Pola:&lt;br&gt;
+            Marka&lt;br&gt;
+            Model&lt;br&gt;
+            Ilość pasażerów&lt;br&gt;
+            Numer linii&lt;br&gt;
+            Czy miejski&lt;br&gt;
+            Metoda: wyswietl_autobus&lt;br&gt;
+            Nowe pole to rok_produkcji &lt;br&gt;
+            Nowa metoda to wypisz(); &lt;br&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+</body>
+</html>
 
