@@ -2,7 +2,7 @@
     text-transform: uppercase;
 }
 
-</style></head><body><h1>Proste działania</h1><label for="a">Podaj pierwszą liczbę:</label><input type="number" id="a"><br><br><label for="b">Podaj drugą liczbę:</label><input type="number" id="b"><br><br><input type="button" value="DODAWANIE" onclick="suma()"><input type="button" value="ODEJMOWANIE" onclick="roznica()"><input type="button" value="MNOŻENIE" onclick="iloczyn()"><input type="button" value="DZIELENIE" onclick="iloraz()"><div id="wynik" style="margin-top:20px;"></div><script>function suma() {
+</style></head><body><h1>Proste działania</h1><label for="a">Podaj pierwszą liczbę:</label><input type="number" id="a"><br><br><label for="b">Podaj drugą liczbę:</label><input type="number" id="b"><br><br><input type="button" value="DODAWANIE" onclick="suma()"><input type="button" value="ODEJMOWANIE" onclick="roznica()"><input type="button" value="MNOŻENIE" onclick="iloczyn()"><input type="button" value="DZIELENIE" onclick="iloraz()"><div id="wynik" style="margin-top:20px;"></div> <input type="button" value="teoria" onclick="teoria()"> <script>function suma() {
     var a=document.getElementById("a").value;
     var b=document.getElementById("b").value;
 
@@ -75,5 +75,27 @@ function iloraz() {
         }
     }
 }
+
+    function teoria() {
+    document.write("<font color=green size=4>pierwsza linia teorii</font>" +"<br>");
+    document.write("<font color=red size=4>&lt;</font>" +"<font color=red size=4>label 
+ for=</font>"+" <font color=red size=4>&quot; </font>"); 
+ document.write("<font color=red size=4>a</font>" +"<font color=red size=4>&quot;</font>" +"<font 
+ color=red size=4>&gt; </font>"); 
+ document.write("<font color=red size=4>Podaj pierwszą liczbę:</font>");
+            document.write("<font color=red size=4>&lt;</font>" +"<font color=red 
+ size=4>/label</font>"+" <font color=red size=4>&gt; </font>"); 
+ document.write("<font color=red size=4>&lt;</font>" +"<font color=red size=4>input 
+ type=</font>"+" <font color=red size=4>&quot; </font>"); 
+ document.write("<font color=red size=4>number</font>" +"<font color=red 
+ size=4>&quot; </font>"); 
+ document.write("<font color=red size=4> id=</font>" +"<font color=red size=4>&quot;</font>");
+                        document.write("<font color=red size=4>a</font>" +"<font color=red size=4>&quot;</font>" +"<font 
+ color=red size=4>&gt; </font>"+" <br>"); 
+ document.write("<font color=green size=4>wytłumaczenia</font>" +"<br>");
+                            document.write("<font color=red size=4>wykonanie numerycznego pola formularza z opisem 'Podaj 
+ pierwszą liczbę:' a nazwa pola to ' a' </font>"+"<br>"); 
+
+                            }
 
 </script></body></html>
