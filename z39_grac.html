@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolory</title>
+</head>
+<body>
+
+    <h3 style="color:green;">MENU:</h3>
+    <ul>
+        <li>1-CZERWONY</li>
+        <li>2-NIEBIESKI</li>
+    </ul>
+    <input type="button" name="oblicz" value="Oblicz" onclick="fun_kow()" />
+
+    <script>
+        function fun_kow() {
+            var x_kow = prompt("Podaj kolor: (1 - czerwony, 2 - niebieski, lub wpisz 'czerwony' lub 'niebieski')", "");
+
+            if (x_kow == 1 || x_kow.toLowerCase() == "czerwony") {
+                document.write('<h1 style="color:red; font-size: 7em;">wczytałeś kolor czerwony</h1><br />');
+            } else if (x_kow == 2 || x_kow.toLowerCase() == "niebieski") {
+                document.write('<h6 style="color:blue; font-size: 1em;">wczytałeś kolor niebieski</h6><br />');
+            } else {
+                document.write('<h1 style="color:red; font-size: 7em;">Nieprawidłowy wybór</h1><br />');
+            }
+        }
+    </script>
+
+</body>
+</html>
 
