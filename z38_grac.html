@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program JavaScript</title>
+</head>
+<body style="background-color:silver;">
+
+<script>
+    var imie = "Konrad";
+    var nazwisko = "Graczyk";
+    var dzien_urodzenia = 27;
+    var numer_w_dzienniku = 8;
+
+    var liczba1 = imie.length;
+    var liczba2 = imie.length + 7;
+    var liczba3 = nazwisko.length;
+    var liczba4 = nazwisko.length + 4;
+
+    document.write("<font color=green size=" + (40 + (numer_w_dzienniku % 7)) + ">Imię: " + imie + ", Nazwisko: " + nazwisko + "</font><br>");
+    document.write("<font color=green size=" + (40 + (numer_w_dzienniku % 7)) + ">liczba1 = " + liczba1 + ", liczba2 = " + liczba2 + ", liczba3 = " + liczba3 + ", liczba4 = " + liczba4 + "</font><br>");
+
+    var opcja = prompt("Wybierz numer opcji: 3, 29, 58");
+
+    if (opcja == 3) {
+        document.write("<font color=green size=7>Jesteś w opcji 3 --> teoria operatorów logicznych</font><br>");
+        document.write("<p style=\"font-size: 20px; color: blue;\">Zmiana koloru tekstu z zielonego na niebieski!</p>");
+        document.write("<font color=blue size=7>Teoria o operatorach logicznych: && (AND), || (OR), ! (NOT)</font><br>");
+    } else if (opcja == 29) {
+        var liczba_kow = prompt("Podaj liczbę do sprawdzenia w przedziale (7 ; 11]:");
+        liczba_kow = parseInt(liczba_kow);
+        if (liczba_kow > 7 && liczba_kow <= 11) {
+            document.write("<font color=green size=7>Liczba należy do przedziału (7 ; 11]</font><br>");
+        } else {
+            document.write("<font color=red size=7>Liczba nie należy do przedziału (7 ; 11]</font><br>");
+        }
+    } else if (opcja == 58) {
+        var liczba2_kow = prompt("Podaj liczbę do sprawdzenia w przedziale (-∞; 6) lub [13 ; +∞):");
+        liczba2_kow = parseInt(liczba2_kow);
+        if ((liczba2_kow < 6) || (liczba2_kow >= 13)) {
+            document.write("<font color=green size=7>Liczba należy do przedziału (-∞; 6) lub [13 ; +∞)</font><br>");
+        } else {
+            document.write("<font color=red size=7>Liczba nie należy do przedziału (-∞; 6) lub [13 ; +∞)</font><br>");
+        }
+    } else {
+        document.write("<font color=red size=7>Nie ma takiej opcji</font><br>");
+    }
+</script>
+
+</body>
+</html>
