@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kod źródłowy</title>
+</head>
+<body>
+    <h3 style="color:green;">MENU:</h3>
+    <ul>
+        <li>1-CZERWONY</li>
+        <li>2-NIEBIESKI</li>
+    </ul>
+    <input type="button" name="oblicz" value="Oblicz" onclick="fun_kow()" />
+    
+    <h3>Źródło kodu:</h3>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="pl"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Kolory&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+
+            &lt;h3 style="color:green;"&gt;MENU:&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;1-CZERWONY&lt;/li&gt;
+                &lt;li&gt;2-NIEBIESKI&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;input type="button" name="oblicz" value="Oblicz" onclick="fun_kow()" /&gt;
+
+            &lt;script&gt;
+                function fun_kow() {
+                    var x_kow = prompt("Podaj kolor: (1 - czerwony, 2 - niebieski, lub wpisz 'czerwony' lub 'niebieski')", "");
+
+                    if (x_kow == 1 || x_kow.toLowerCase() == "czerwony") {
+                        document.write('&lt;h1 style="color:red; font-size: 7em;"&gt;wczytałeś kolor czerwony&lt;/h1&gt;&lt;br /&gt;');
+                    } else if (x_kow == 2 || x_kow.toLowerCase() == "niebieski") {
+                        document.write('&lt;h6 style="color:blue; font-size: 1em;"&gt;wczytałeś kolor niebieski&lt;/h6&gt;&lt;br /&gt;');
+                    } else {
+                        document.write('&lt;h1 style="color:red; font-size: 7em;"&gt;Nieprawidłowy wybór&lt;/h1&gt;&lt;br /&gt;');
+                    }
+                }
+            &lt;/script&gt;
+
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+</body>
+</html>
