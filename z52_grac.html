@@ -15,23 +15,23 @@
         let dl_nazwiska = 7; // Graczyk
         let dl_imienia = 6;  // Konrad
 
-        let a_kow = (dl_nazwiska % 4) + 5; 
-        let b_kow = (dl_imienia % 6) + 20; 
+        let a_gra = (dl_nazwiska % 4) + 5; 
+        let b_gra = (dl_imienia % 6) + 20; 
 
-        for (let i = 0; i < b_kow; i++) {
+        for (let i = 0; i < b_gra; i++) {
             document.write("*");
         }
         document.write("<br>");
 
-        for (let i = 0; i < a_kow - 2; i++) {
+        for (let i = 0; i < a_gra - 2; i++) {
             document.write("*");
-            for (let j = 0; j < b_kow - 2; j++) {
+            for (let j = 0; j < b_gra - 2; j++) {
                 document.write("&nbsp;");
             }
             document.write("*<br>");
         }
 
-        for (let i = 0; i < b_kow; i++) {
+        for (let i = 0; i < b_gra; i++) {
             document.write("*");
         }
     </script>
