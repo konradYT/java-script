@@ -1,36 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Sprawdzanie trójkąta</title>
+    <meta charset="utf-8">
+    <title>Sprawdzenie danych Graczyk</title>
 </head>
 <body>
-    <h1>Sprawdź, czy boki tworzą trójkąt</h1>
-    <button onclick="sprawdzTrojkat()">Sprawdź trójkąt</button>
-
+<div style="color:red; font-size:30px;">
     <script>
-        function sprawdzTrojkat() {
-            let a_gra, b_gra, c_gra;
-            let poprawne = false;
+        let a_gra, b_gra, c_gra;
+        let poprawne = false;
 
-            while (!poprawne) {
-                a_gra = parseFloat(prompt("Podaj bok a:"));
-                b_gra = parseFloat(prompt("Podaj bok b:"));
-                c_gra = parseFloat(prompt("Podaj bok c:"));
+        do {
+            a_gra = parseFloat(prompt("Podaj bok a:", ""));
+            b_gra = parseFloat(prompt("Podaj bok b:", ""));
+            c_gra = parseFloat(prompt("Podaj bok c:", ""));
 
-                if (
-                    a_gra > 0 && b_gra > 0 && c_gra > 0 &&
-                    a_gra + b_gra > c_gra &&
-                    a_gra + c_gra > b_gra &&
-                    b_gra + c_gra > a_gra
-                ) {
-                    alert("Z tych boków można zbudować trójkąt.");
-                    poprawne = true;
-                } else {
-                    alert("Błędne dane. Spróbuj ponownie.");
-                }
+            if (
+                a_gra > 0 && b_gra > 0 && c_gra > 0 &&
+                a_gra + b_gra > c_gra &&
+                a_gra + c_gra > b_gra &&
+                b_gra + c_gra > a_gra
+            ) {
+                poprawne = true;
+                document.write("Z podanych boków można zbudować trójkąt.");
+            } else {
+                alert("Błędne dane! Podaj trzy poprawne długości boków.");
             }
-        }
+        } while (!poprawne);
     </script>
+</div>
 </body>
 </html>
