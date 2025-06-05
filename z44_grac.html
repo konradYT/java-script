@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie - Imię i Nazwisko na przemian</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .wynik {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Wyświetlanie imienia i nazwiska na przemian</h2>
+  <div id="info"></div>
+  <div class="wynik" id="wynik"></div>
+
+  <script>
+    const imie_gra = "Konrad";
+    const nazwisko_gra = "Graczyk";
+
+    const dlugoscNazwiska = nazwisko_gra.length; 
+    const kon_pet_gra = (dlugoscNazwiska % 4) + 10; 
+    const wielkoscLiter = (dlugoscNazwiska % 3) + 40; 
+
+    document.getElementById("info").innerHTML = `
+      <strong>Ilość wykonania pętli =</strong> ${kon_pet_gra}<br>
+      <strong>Wielkość liter =</strong> ${wielkoscLiter}px
+    `;
+
+
+    const wynikDiv = document.getElementById("wynik");
+
+    for (let i_gra = 1; i_gra <= kon_pet_gra; i_gra++) {
+      if (i_gra % 2 !== 0) {
+        wynikDiv.innerHTML += `<p style="font-size: ${wielkoscLiter}px;">${nazwisko_gra}</p>`;
+      } else {
+        wynikDiv.innerHTML += `<p style="font-size: ${wielkoscLiter}px;">${imie_gra}</p>`;
+      }
+    }
+  </script>
+</body>
+</html>
