@@ -1,24 +1,36 @@
 <!DOCTYPE html>
- <head>
- <title>Sprawdzenie danych Twoje nazwisko </title>
- <meta charset="utf-8">
- </head>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprawdzanie trójkąta</title>
+</head>
 <body>
-<div style="color:red;font-size:50px;">
- <script language="JavaScript">
- do {
-var liczba1=prompt("wysokość=","");
- var h_gra=parseFloat(liczba1);
- }
- while ( h_gra<=0);
- do {
-var liczba1=prompt("podstawę=","");
- var a_gra=parseFloat(liczba1);
- }
- while(!( a>0));
-var Pole=a_gra*h_gra/2;
- document.write("Pole="+Pole.toFixed(2)+" cm^2"+"<br>");
- </script>
-</div>
+    <h1>Sprawdź, czy boki tworzą trójkąt</h1>
+    <button onclick="sprawdzTrojkat()">Sprawdź trójkąt</button>
+
+    <script>
+        function sprawdzTrojkat() {
+            let a_gra, b_gra, c_gra;
+            let poprawne = false;
+
+            while (!poprawne) {
+                a_gra = parseFloat(prompt("Podaj bok a:"));
+                b_gra = parseFloat(prompt("Podaj bok b:"));
+                c_gra = parseFloat(prompt("Podaj bok c:"));
+
+                if (
+                    a_gra > 0 && b_gra > 0 && c_gra > 0 &&
+                    a_gra + b_gra > c_gra &&
+                    a_gra + c_gra > b_gra &&
+                    b_gra + c_gra > a_gra
+                ) {
+                    alert("Z tych boków można zbudować trójkąt.");
+                    poprawne = true;
+                } else {
+                    alert("Błędne dane. Spróbuj ponownie.");
+                }
+            }
+        }
+    </script>
 </body>
 </html>
