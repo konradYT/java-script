@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Pierwiastki liczb</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef;
+      padding: 20px;
+    }
+    .linia {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Drukowanie liczb i ich pierwiastków</h2>
+  <div id="output"></div>
+
+  <script>
+    const numer_w_dzienniku = 8;
+    const koniec = numer_w_dzienniku + 15;
+    let linie = 0;
+
+    for (let i_gra = numer_w_dzienniku; i_gra <= koniec; i_gra++) {
+      let pierw2 = Math.sqrt(i_gra);
+      let pierw4 = Math.sqrt(pierw2);
+
+      document.getElementById("output").innerHTML +=
+        `<div class="linia">I=${i_gra} pierw_2(${i_gra})=${pierw2.toFixed(2)} pierw_4(${i_gra})=${pierw4.toFixed(2)}</div>`;
+
+      linie++;
+      if (linie % 3 === 0) {
+        alert("Naciśnij OK, aby kontynuować...");
+      }
+    }
+  </script>
+</body>
+</html>
