@@ -1,24 +1,33 @@
 <!DOCTYPE html>
- <head>
- <title>Sprawdzenie danych Twoje nazwisko </title>
- <meta charset="utf-8">
- </head>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Sprawdzenie danych Graczyk</title>
+</head>
 <body>
-<div style="color:red;font-size:50px;">
- <script language="JavaScript">
- do {
-var liczba1=prompt("wysokość=","");
- var h_gra=parseFloat(liczba1);
- }
- while ( h_gra<=0);
- do {
-var liczba1=prompt("podstawę=","");
- var a_gra=parseFloat(liczba1);
- }
- while(!( a>0));
-var Pole=a_gra*h_gra/2;
- document.write("Pole="+Pole.toFixed(2)+" cm^2"+"<br>");
- </script>
+<div style="color:red; font-size:30px;">
+    <script>
+        let a_gra, b_gra, c_gra;
+        let poprawne = false;
+
+        do {
+            a_gra = parseFloat(prompt("Podaj bok a:", ""));
+            b_gra = parseFloat(prompt("Podaj bok b:", ""));
+            c_gra = parseFloat(prompt("Podaj bok c:", ""));
+
+            if (
+                a_gra > 0 && b_gra > 0 && c_gra > 0 &&
+                a_gra + b_gra > c_gra &&
+                a_gra + c_gra > b_gra &&
+                b_gra + c_gra > a_gra
+            ) {
+                poprawne = true;
+                document.write("Z podanych boków można zbudować trójkąt.");
+            } else {
+                alert("Błędne dane! Podaj trzy poprawne długości boków.");
+            }
+        } while (!poprawne);
+    </script>
 </div>
 </body>
 </html>
