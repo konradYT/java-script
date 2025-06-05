@@ -3,6 +3,35 @@
 <head>
     <meta charset="utf-8">
     <title>Graczyk 3g</title>
+    <style>
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 30px auto;
+    justify-content: center;
+  }
+
+  .button-container input[type="button"] {
+    padding: 10px 15px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: background-color 0.3s;
+  }
+
+  .button-container input[type="button"]:hover {
+    background-color: #2980b9;
+  }
+</style>
+
     <script language="JavaScript">
         function WinOpen_zadanie1() 
  {
@@ -219,54 +248,63 @@ function okno_zamknij()
 </head>
 <body>
     <form>
-    <input type="button" name="zadanie1" value="zadanie1-Graczyk" onclick="WinOpen_zadanie1(' ')"> <br>
-    <input type="button" name="zadanie2" value="zadanie2-Graczyk" onclick="WinOpen_zadanie2(' ')"> <br>
-    <input type="button" name="zadanie3" value="zadanie3-Graczyk" onclick="WinOpen_zadanie3(' ')"> <br>
-    <input type="button" name="zadanie4" value="zadanie4-Graczyk" onclick="WinOpen_zadanie4(' ')"> <br>
-    <input type="button" name="zadanie5" value="zadanie5-Graczyk" onclick="WinOpen_zadanie5(' ')"> <br>
-    <input type="button" name="zadanie7" value="zadanie7-Graczyk" onclick="WinOpen_zadanie7(' ')"> <br>
-    <input type="button" name="zadanie8" value="zadanie8-Graczyk" onclick="WinOpen_zadanie8(' ')"> <br>
-    <input type="button" name="zadanie9" value="zadanie9-Graczyk" onclick="WinOpen_zadanie9(' ')"> <br>
-    <input type="button" name="zadanie10" value="zadanie10-Graczyk" onclick="WinOpen_zadanie10(' ')"> <br>
-    <input type="button" name="zadanie11" value="zadanie11-Graczyk" onclick="WinOpen_zadanie11(' ')"> <br>
-    <input type="button" name="zadanie12" value="zadanie12-Graczyk" onclick="WinOpen_zadanie12(' ')"> <br>
-    <input type="button" name="zadanie13" value="zadanie13-Graczyk" onclick="WinOpen_zadanie13(' ')"> <br>
-    <input type="button" name="zadanie14" value="zadanie14-Graczyk" onclick="WinOpen_zadanie14(' ')"><br>
-    <input type="button" name="zadanie15" value="zadanie15-Graczyk" onclick="WinOpen_zadanie15(' ')"><br>
-    <input type="button" name="zadanie16" value="zadanie16-Graczyk" onclick="WinOpen_zadanie16(' ')"> <br>
-    <input type="button" name="zadanie17" value="zadanie17-Graczyk" onclick="WinOpen_zadanie17(' ')"> <br>
-    <input type="button" name="zadanie18" value="zadanie18-Graczyk" onclick="WinOpen_zadanie18(' ')"><br>
-    <input type="button" name="zadanie19" value="zadanie19-Graczyk" onclick="WinOpen_zadanie19(' ')"> <br>
-    <input type="button" name="zadanie20" value="zadanie20-Graczyk" onclick="WinOpen_zadani20(' ')"> <br>
-    <input type="button" name="zadanie21" value="zadanie21-Graczyk" onclick="WinOpen_zadanie21(' ')"><br>
-    <input type="button" name="zadanie28" value="zadanie28-Graczyk" onclick="WinOpen_zadanie28(' ')"> <br>
-    <input type="button" name="zadanie29" value="zadanie29-Graczyk" onclick="WinOpen_zadanie29(' ')"> <br>
-    <input type="button" name="zadanie30" value="zadanie30-Graczyk" onclick="WinOpen_zadanie30(' ')"> <br>
-    <input type="button" name="zadanie31" value="zadanie31-Graczyk" onclick="WinOpen_zadanie31(' ')"><br>
-    <input type="button" name="zadanie32" value="zadanie32-Graczyk" onclick="WinOpen_zadanie32(' ')"><br>
-    <input type="button" name="zadanie35" value="zadanie35-Graczyk" onclick="WinOpen_zadanie35(' ')"><br>
-    <input type="button" name="zadanie36" value="Zadanie 36-Graczyk" onclick="WinOpen_zadanie36()"><br>
-    <input type="button" name="zadanie37" value="Zadanie 37-Graczyk" onclick="WinOpen_zadanie37()"><br>
-    <input type="button" name="zadanie38" value="Zadanie 38-Graczyk" onclick="WinOpen_zadanie38()"><br>
-    <input type="button" name="zadanie39" value="Zadanie 39-Graczyk" onclick="WinOpen_zadanie39()"><br>
-    <input type="button" name="zadanie40" value="zadanie40-Graczyk" onclick="WinOpen_zadanie40(' ')"><br>
-    <input type="button" name="zadanie41" value="zadanie41-Graczyk" onclick="WinOpen_zadanie41(' ')"><br>
-    <input type="button" name="zadanie42" value="zadanie42-Graczyk" onclick="WinOpen_zadanie42(' ')"><br>
-    <input type="button" name="zadanie46" value="zadanie46-Graczyk" onclick="WinOpen_zadanie46(' ')"><br>
-    <input type="button" name="zadanie56" value="zadanie56-Graczyk" onclick="WinOpen_zadanie56(' ')"><br>
-        <br><br><br>
-    
-
-    <input type="button" name="kod_18" value="kod_18-Graczyk" onclick="WinOpen_kod18(' ')">
-    <input type="button" name="kod_19" value="kod_19-Graczyk" onclick="WinOpen_kod19(' ')">
-    <input type="button" name="kod_20" value="kod_20-Graczyk" onclick="WinOpen_kod20(' ')">
-    <input type="button" name="kod_30" value="kod_30-Graczyk" onclick="WinOpen_kod30(' ')">
-    <input type="button" name="kod_31" value="kod_31-Graczyk" onclick="WinOpen_kod31(' ')">
-    <input type="button" name="kod_32" value="kod_32-Graczyk" onclick="WinOpen_kod32(' ')">
-    <input type="button" name="kod36" value="Kod 36-Graczyk" onclick="WinOpen_kod36()">
-    <input type="button" name="kod37" value="Kod 37-Graczyk" onclick="WinOpen_kod37()">
-    <input type="button" name="kod38" value="Kod 38-Graczyk" onclick="WinOpen_kod38()">
-    <input type="button" name="kod39" value="Kod 39-Graczyk" onclick="WinOpen_kod39()">
+    <div class="button-container">
+      <input type="button" name="zadanie1" value="zadanie1-Graczyk" onclick="WinOpen_zadanie1(' ')">
+      <input type="button" name="zadanie2" value="zadanie2-Graczyk" onclick="WinOpen_zadanie2(' ')">
+      <input type="button" name="zadanie3" value="zadanie3-Graczyk" onclick="WinOpen_zadanie3(' ')">
+      <input type="button" name="zadanie4" value="zadanie4-Graczyk" onclick="WinOpen_zadanie4(' ')">
+      <input type="button" name="zadanie5" value="zadanie5-Graczyk" onclick="WinOpen_zadanie5(' ')">
+      <input type="button" name="zadanie7" value="zadanie7-Graczyk" onclick="WinOpen_zadanie7(' ')">
+      <input type="button" name="zadanie8" value="zadanie8-Graczyk" onclick="WinOpen_zadanie8(' ')">
+      <input type="button" name="zadanie9" value="zadanie9-Graczyk" onclick="WinOpen_zadanie9(' ')">
+      <input type="button" name="zadanie10" value="zadanie10-Graczyk" onclick="WinOpen_zadanie10(' ')">
+      <input type="button" name="zadanie11" value="zadanie11-Graczyk" onclick="WinOpen_zadanie11(' ')">
+      <input type="button" name="zadanie12" value="zadanie12-Graczyk" onclick="WinOpen_zadanie12(' ')">
+      <input type="button" name="zadanie13" value="zadanie13-Graczyk" onclick="WinOpen_zadanie13(' ')">
+      <input type="button" name="zadanie14" value="zadanie14-Graczyk" onclick="WinOpen_zadanie14(' ')">
+      <input type="button" name="zadanie15" value="zadanie15-Graczyk" onclick="WinOpen_zadanie15(' ')">
+      <input type="button" name="zadanie16" value="zadanie16-Graczyk" onclick="WinOpen_zadanie16(' ')">
+      <input type="button" name="zadanie17" value="zadanie17-Graczyk" onclick="WinOpen_zadanie17(' ')">
+      <input type="button" name="zadanie18" value="zadanie18-Graczyk" onclick="WinOpen_zadanie18(' ')">
+      <input type="button" name="zadanie19" value="zadanie19-Graczyk" onclick="WinOpen_zadanie19(' ')">
+      <input type="button" name="zadanie20" value="zadanie20-Graczyk" onclick="WinOpen_zadani20(' ')">
+      <input type="button" name="zadanie21" value="zadanie21-Graczyk" onclick="WinOpen_zadanie21(' ')">
+      <input type="button" name="zadanie28" value="zadanie28-Graczyk" onclick="WinOpen_zadanie28(' ')">
+      <input type="button" name="zadanie29" value="zadanie29-Graczyk" onclick="WinOpen_zadanie29(' ')">
+      <input type="button" name="zadanie30" value="zadanie30-Graczyk" onclick="WinOpen_zadanie30(' ')">
+      <input type="button" name="zadanie31" value="zadanie31-Graczyk" onclick="WinOpen_zadanie31(' ')">
+      <input type="button" name="zadanie32" value="zadanie32-Graczyk" onclick="WinOpen_zadanie32(' ')">
+      <input type="button" name="zadanie35" value="zadanie35-Graczyk" onclick="WinOpen_zadanie35(' ')">
+      <input type="button" name="zadanie36" value="Zadanie 36-Graczyk" onclick="WinOpen_zadanie36()">
+      <input type="button" name="zadanie37" value="Zadanie 37-Graczyk" onclick="WinOpen_zadanie37()">
+      <input type="button" name="zadanie38" value="Zadanie 38-Graczyk" onclick="WinOpen_zadanie38()">
+      <input type="button" name="zadanie39" value="Zadanie 39-Graczyk" onclick="WinOpen_zadanie39()">
+      <input type="button" name="zadanie40" value="zadanie40-Graczyk" onclick="WinOpen_zadanie40(' ')">
+      <input type="button" name="zadanie41" value="zadanie41-Graczyk" onclick="WinOpen_zadanie41(' ')">
+      <input type="button" name="zadanie42" value="zadanie42-Graczyk" onclick="WinOpen_zadanie42(' ')">
+      <input type="button" name="zadanie43" value="zadanie43-Graczyk" onclick="WinOpen_zadanie43(' ')">
+      <input type="button" name="zadanie44" value="zadanie44-Graczyk" onclick="WinOpen_zadanie44(' ')">
+      <input type="button" name="zadanie46" value="zadanie46-Graczyk" onclick="WinOpen_zadanie46(' ')">
+      <input type="button" name="zadanie47" value="zadanie47-Graczyk" onclick="WinOpen_zadanie47(' ')">
+      <input type="button" name="zadanie48" value="zadanie48-Graczyk" onclick="WinOpen_zadanie48(' ')">
+      <input type="button" name="zadanie49" value="zadanie49-Graczyk" onclick="WinOpen_zadanie49(' ')">
+      <input type="button" name="zadanie52" value="zadanie52-Graczyk" onclick="WinOpen_zadanie52(' ')">
+      <input type="button" name="zadanie56" value="zadanie56-Graczyk" onclick="WinOpen_zadanie56(' ')">
+      <input type="button" name="zadanie57" value="zadanie57-Graczyk" onclick="WinOpen_zadanie57(' ')">
+      
+      <!-- KODY -->
+      <input type="button" name="kod_18" value="kod_18-Graczyk" onclick="WinOpen_kod18(' ')">
+      <input type="button" name="kod_19" value="kod_19-Graczyk" onclick="WinOpen_kod19(' ')">
+      <input type="button" name="kod_20" value="kod_20-Graczyk" onclick="WinOpen_kod20(' ')">
+      <input type="button" name="kod_30" value="kod_30-Graczyk" onclick="WinOpen_kod30(' ')">
+      <input type="button" name="kod_31" value="kod_31-Graczyk" onclick="WinOpen_kod31(' ')">
+      <input type="button" name="kod_32" value="kod_32-Graczyk" onclick="WinOpen_kod32(' ')">
+      <input type="button" name="kod36" value="Kod 36-Graczyk" onclick="WinOpen_kod36()">
+      <input type="button" name="kod37" value="Kod 37-Graczyk" onclick="WinOpen_kod37()">
+      <input type="button" name="kod38" value="Kod 38-Graczyk" onclick="WinOpen_kod38()">
+      <input type="button" name="kod39" value="Kod 39-Graczyk" onclick="WinOpen_kod39()">
+    </div>
+  </form>
 
 <br><br><br>
 
